@@ -181,7 +181,6 @@ BaseGameCharacterDetails.DoTraits = function()
     TraitFactory.addTrait("Agoraphobic", getText("UI_trait_agoraphobic"), -4, getText("UI_trait_agoraphobicdesc"), false);
     TraitFactory.addTrait("Claustophobic", getText("UI_trait_claustro"), -4, getText("UI_trait_claustrodesc"), false);
 
-    -- MandoDB : Restored Lucky and Unlucky Trait (Maybe some issues.)
     -- TraitFactory.addTrait("Lucky", getText("UI_trait_lucky"), 4, getText("UI_trait_luckydesc"), false, true);
     -- TraitFactory.addTrait("Unlucky", getText("UI_trait_unlucky"), -4, getText("UI_trait_unluckydesc"), false, true);
     -- -------------------------------------------------------------------------------------------
