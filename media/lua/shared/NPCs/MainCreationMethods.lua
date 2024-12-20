@@ -182,8 +182,8 @@ BaseGameCharacterDetails.DoTraits = function()
     TraitFactory.addTrait("Claustophobic", getText("UI_trait_claustro"), -4, getText("UI_trait_claustrodesc"), false);
 
     -- MandoDB : Restored Lucky and Unlucky Trait (Maybe some issues.)
-    TraitFactory.addTrait("Lucky", getText("UI_trait_lucky"), 4, getText("UI_trait_luckydesc"), false, true);
-    TraitFactory.addTrait("Unlucky", getText("UI_trait_unlucky"), -4, getText("UI_trait_unluckydesc"), false, true);
+    -- TraitFactory.addTrait("Lucky", getText("UI_trait_lucky"), 4, getText("UI_trait_luckydesc"), false, true);
+    -- TraitFactory.addTrait("Unlucky", getText("UI_trait_unlucky"), -4, getText("UI_trait_unluckydesc"), false, true);
     -- -------------------------------------------------------------------------------------------
     TraitFactory.addTrait("Marksman", getText("UI_trait_marksman"), 0, getText("UI_trait_marksmandesc"), true);
     TraitFactory.addTrait("NightOwl", getText("UI_trait_nightowl"), 0, getText("UI_trait_nightowldesc"), true);
@@ -204,8 +204,7 @@ BaseGameCharacterDetails.DoTraits = function()
 	TraitFactory.addTrait("LowThirst", getText("UI_trait_LowThirst"), 2, getText("UI_trait_LowThirstDesc"), false);
 	TraitFactory.addTrait("Burglar", getText("UI_prof_Burglar"), 0, getText("UI_trait_BurglarDesc"), true);
 
-    -- MandoDB : Restored the Trait "Injured" (Maybe some issues).
-	TraitFactory.addTrait("Injured", "Injured", -4, getText("UI_trait_outdoorsmandesc"), false);
+	-- TraitFactory.addTrait("Injured", "Injured", -4, getText("UI_trait_outdoorsmandesc"), false);
     -- -------------------------------------------------------------------------------------------
 --	local selfdef = TraitFactory.addTrait("SelfDefenseClass", getText("UI_trait_SelfDefenseClass"), 6, getText("UI_trait_SelfDefenseClassDesc"), false);
 --	selfdef:addXPBoost(Perks.Guard, 1)
@@ -548,8 +547,7 @@ BaseGameCharacterDetails.DoTraits = function()
     TraitFactory.setMutualExclusive("Brave", "Agoraphobic");
     TraitFactory.setMutualExclusive("Brave", "Claustophobic");
     TraitFactory.setMutualExclusive("ShortSighted", "EagleEyed");
-    -- MandoDB : Restored Unlucky / Lucky Trait.
-    TraitFactory.setMutualExclusive("Lucky", "Unlucky");
+    -- TraitFactory.setMutualExclusive("Lucky", "Unlucky");
     TraitFactory.setMutualExclusive("Deaf", "HardOfHearing");
     TraitFactory.setMutualExclusive("Deaf", "KeenHearing");
     TraitFactory.setMutualExclusive("Desensitized", "Hemophobic");
