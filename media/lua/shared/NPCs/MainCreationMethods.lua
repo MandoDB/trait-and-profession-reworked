@@ -485,7 +485,7 @@ BaseGameCharacterDetails.DoTraits = function()
 	--TraitFactory.addTrait("Dismantler", getText("UI_trait_Dismantler"), 2, getText("UI_trait_DismantlerDesc"), false);
 	
 	
-	   TraitFactory.setMutualExclusive("Blacksmith", "Blacksmith2");
+	TraitFactory.setMutualExclusive("Blacksmith", "Blacksmith2");
 --    TraitFactory.setMutualExclusive("Metalworker", "Metalworker2");
 	TraitFactory.setMutualExclusive("SpeedDemon", "SundayDriver");
 	TraitFactory.setMutualExclusive("Dextrous", "AllThumbs");
@@ -528,7 +528,7 @@ BaseGameCharacterDetails.DoTraits = function()
     TraitFactory.setMutualExclusive("Athletic", "Out of Shape");
     TraitFactory.setMutualExclusive("Athletic", "Unfit");
     TraitFactory.setMutualExclusive("Athletic", "Very Underweight");
-    -- MandoDB : You can pick Athletic and Smoker Trait. (20/12/2024)
+    -- MandoDB : You can now pick Athletic and Smoker Trait. (20/12/2024)
     -- TraitFactory.setMutualExclusive("Athletic", "Smoker");
     TraitFactory.setMutualExclusive("Fit", "Out of Shape");
     TraitFactory.setMutualExclusive("Fit", "Unfit");
@@ -559,7 +559,8 @@ BaseGameCharacterDetails.DoTraits = function()
     TraitFactory.setMutualExclusive("Desensitized", "AdrenalineJunkie");
     TraitFactory.setMutualExclusive("IronGut", "WeakStomach");
 
-    TraitFactory.setMutualExclusive("Herbalist", "WildernessKnowledge");
+    -- MandoDB : You can now pick Herbalist and Wilderness Knowledge (Two Positive Trait)
+    -- TraitFactory.setMutualExclusive("Herbalist", "WildernessKnowledge");
 
     TraitFactory.sortList();
 
